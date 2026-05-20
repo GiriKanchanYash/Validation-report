@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OrderLens — DQ Validation Report</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#111827}
+.page{max-width:1440px;margin:0 auto;padding:32px 24px}
+table{width:100%;border-collapse:collapse}
+thead th{background:#1e293b;color:#e2e8f0;padding:11px 14px;font-size:11px;font-weight:700;
+          text-transform:uppercase;letter-spacing:0.5px;text-align:left}
+tbody tr:hover td{background:#f0f9ff!important}
+</style></head><body>
+<div class="page">
+
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#0f4c81 100%);
+            border-radius:18px;padding:30px 36px;margin-bottom:24px;color:white;">
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div style="width:52px;height:52px;border-radius:14px;flex-shrink:0;
+                background:linear-gradient(135deg,#4f46e5,#7c3aed);
+                display:flex;align-items:center;justify-content:center;font-size:26px;">🛡️</div>
+    <div>
+      <div style="font-size:22px;font-weight:900;">OrderLens — Data Vault Validation Report</div>
+      <div style="font-size:13px;opacity:0.65;margin-top:3px;">
+        OrderLens.raw_layer &amp; DW_OrderLens &nbsp;·&nbsp;
+        2026-05-20 14:26:50 &nbsp;·&nbsp;
+        138 checks · 7 categories
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:24px;">
+  <div style="background:white;border-radius:12px;padding:18px;text-align:center;border-top:3px solid #16a34a;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <div style="font-size:34px;font-weight:900;color:#16a34a;">87%</div>
+    <div style="font-size:11px;color:#6b7280;font-weight:600;margin-top:3px;">DQ Score</div>
+  </div>
+  <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:34px;font-weight:900;color:#16a34a;">91</div>
+    <div style="font-size:11px;color:#15803d;font-weight:600;margin-top:3px;">PASSED</div>
+  </div>
+  <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:34px;font-weight:900;color:#dc2626;">13</div>
+    <div style="font-size:11px;color:#dc2626;font-weight:600;margin-top:3px;">FAILED</div>
+  </div>
+  <div style="background:#fffbeb;border:1.5px solid #fde68a;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:34px;font-weight:900;color:#d97706;">0</div>
+    <div style="font-size:11px;color:#d97706;font-weight:600;margin-top:3px;">ERRORS</div>
+  </div>
+  <div style="background:#fff7ed;border:1.5px solid #fed7aa;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:34px;font-weight:900;color:#c2410c;">0</div>
+    <div style="font-size:11px;color:#c2410c;font-weight:600;margin-top:3px;">WARNINGS</div>
+  </div>
+  <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:34px;font-weight:900;color:#1d4ed8;">34</div>
+    <div style="font-size:11px;color:#1d4ed8;font-weight:600;margin-top:3px;">INFO</div>
+  </div>
+</div>
+
+<div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,0.07);margin-bottom:24px;">
+  <div style="font-size:15px;font-weight:700;margin-bottom:16px;">Results by Category</div>
+  <table><thead><tr><th>Category</th><th>Checks</th><th>Results</th><th>Score</th></tr></thead>
+  <tbody>
+        <tr>
+          <td style="padding:10px 16px;">
+            <span style="background:#4f46e522;color:#4f46e5;border-radius:6px;padding:3px 10px;font-size:12px;font-weight:700;">Technical</span>
+          </td>
+          <td style="padding:10px 16px;font-size:13px;font-weight:600;">114</td>
+          <td style="padding:10px 16px;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700;">91 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700;margin-left:4px;'>1 FAIL</span>
+            
+          </td>
+          <td style="padding:10px 16px;">
+            <div style="background:#e5e7eb;border-radius:4px;height:7px;width:110px;">
+              <div style="width:98%;background:#16a34a;border-radius:4px;height:7px;"></div>
+            </div>
+            <div style="font-size:11px;color:#6b7280;margin-top:3px;">98%</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px 16px;">
+            <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:3px 10px;font-size:12px;font-weight:700;">Source</span>
+          </td>
+          <td style="padding:10px 16px;font-size:13px;font-weight:600;">24</td>
+          <td style="padding:10px 16px;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700;">0 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700;margin-left:4px;'>12 FAIL</span>
+            
+          </td>
+          <td style="padding:10px 16px;">
+            <div style="background:#e5e7eb;border-radius:4px;height:7px;width:110px;">
+              <div style="width:0%;background:#dc2626;border-radius:4px;height:7px;"></div>
+            </div>
+            <div style="font-size:11px;color:#6b7280;margin-top:3px;">0%</div>
+          </td>
+        </tr></tbody></table>
+</div>
+
+<div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,0.07);margin-bottom:24px;">
+  <div style="font-size:15px;font-weight:700;margin-bottom:14px;">Per-Table Summary</div>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_customer</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_feature</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_material</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_product_config</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>36,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_sales_order</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>10,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">HUB_sales_order_item</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_bom</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>15,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_config_feature</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">6 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_order_customer</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>10,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">6 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_order_item</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">6 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_order_item_config</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>36,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">6 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">LNK_order_item_material</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">6 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">2 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_bom_component</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>15,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_customer</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_feature</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_material</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_order_status</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>10,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#fff5f5;border:1.5px solid #fca5a5;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#dc2626;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_product_config</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>36,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">3 PASS</span>
+            <span style='background:#fee2e2;color:#dc2626;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;'>1 FAIL</span>
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_product_forecast</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_sales_order</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>10,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_sales_order_item</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>12,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div>
+        <div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;
+                    padding:14px;min-width:185px;flex:1 1 185px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+            <div style="width:8px;height:8px;border-radius:50%;background:#16a34a;flex-shrink:0;"></div>
+            <div style="font-size:12px;font-weight:700;color:#111;overflow:hidden;
+                        text-overflow:ellipsis;white-space:nowrap;">SAT_schedule_line</div>
+          </div>
+          <div style="font-size:11px;color:#6b7280;margin-bottom:6px;">
+            Rows: <b>15,000</b>
+          </div>
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            <span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">4 PASS</span>
+            
+            
+            <span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:2px 7px;font-size:10px;font-weight:700;">1 INFO</span>
+          </div>
+        </div></div>
+</div>
+
+<div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,0.07);margin-bottom:24px;">
+  <div style="font-size:15px;font-weight:700;color:#dc2626;margin-bottom:14px;">Issues That Need Fixing — 13 failures</div>
+  
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #4f46e5;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#4f46e522;color:#4f46e5;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Technical</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">SAT_product_config</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Orphan records — CONFIG_HK not in LNK_order_item_config</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">14,400 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">Satellite rows without a parent are invisible in all joins.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item_config p ON s.CONFIG_HK=p.CONFIG_HK WHERE p.CONFIG_HK IS NULL</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_customer</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_customer GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_feature</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_feature GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_material</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_material GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_order_item</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_order_item_config</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item_config GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_product_config</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_product_config GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_order_customer</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_customer GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_sales_order_item</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_sales_order_item GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">HUB_sales_order</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_sales_order GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_bom</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_bom GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_config_feature</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_config_feature GROUP BY RECORD_SOURCE) x</div>
+            </div>
+            <div style="background:#fff5f5;border:1px solid #fca5a5;border-left:4px solid #6b7280;
+                        border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:8px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span style="background:#6b728022;color:#6b7280;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;">Source</span>
+                <span style="font-size:13px;font-weight:700;color:#dc2626;">LNK_order_item_material</span>
+              </div>
+              <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:3px;">Single source feeding 100% of records</div>
+              <div style="font-size:12px;color:#dc2626;font-weight:600;margin-bottom:4px;">1 issue(s) found</div>
+              <div style="font-size:11px;color:#6b7280;margin-bottom:4px;font-style:italic;">One source feeding everything suggests a backup/fallback took over — may be partial/lower quality.</div>
+              <div style="font-size:10px;color:#9ca3af;font-family:monospace;">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item_material GROUP BY RECORD_SOURCE) x</div>
+            </div>
+</div>
+
+<div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);margin-bottom:24px;">
+  <div style="padding:20px 20px 12px;font-size:15px;font-weight:700;">All Check Results (138)</div>
+  <table><thead><tr><th>Table / View</th><th>Check</th><th>Business Impact</th><th>Query Preview</th><th>Result</th></tr></thead>
+  <tbody><tr><td colspan="5" style="background:#4f46e5;color:white;font-weight:700;font-size:12px;padding:8px 16px;letter-spacing:0.5px;">■ TECHNICAL</td></tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (CUSTOMER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer WHERE CUSTOMER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (CUSTOMER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT CUSTOMER_HK FROM OrderLens.RAW_VAULT.HUB_customer GROUP BY CUSTOMER_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT CUSTOMER_HK FROM OrderLens.RAW_…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_customer…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (FEATURE_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature WHERE FEATURE_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature WHERE F…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (FEATURE_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT FEATURE_HK FROM OrderLens.RAW_VAULT.HUB_feature GROUP BY FEATURE_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT FEATURE_HK FROM OrderLens.RAW_V…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature WHERE R…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_feature…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material WHERE MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK FROM OrderLens.RAW_VAULT.HUB_material GROUP BY MATERIAL_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK FROM OrderLens.RAW_…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_material…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHER…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHERE ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHER…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_HK not in HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item l LEFT JOIN OrderLens.RAW_VAULT.HUB_sales_order h ON l.ORDER_HK=h.ORDER_HK WHERE h.ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item l LE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item WHER…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_ITEM_HK not in HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item l LEFT JOIN OrderLens.RAW_VAULT.HUB_sales_order_item h ON l.ORDER_ITEM_HK=h.ORDER_ITEM_HK WHERE h.ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item l LE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_HK, ORDER_ITEM_HK FROM OrderLens.RAW_VAULT.LNK_order_item GROUP BY ORDER_HK, ORDER_ITEM_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_HK, ORDER_ITEM_HK FROM Or…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_ITEM_HK not in HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config l LEFT JOIN OrderLens.RAW_VAULT.HUB_sales_order_item h ON l.ORDER_ITEM_HK=h.ORDER_ITEM_HK WHERE h.ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (CONFIG_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config WHERE CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — CONFIG_HK not in HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config l LEFT JOIN OrderLens.RAW_VAULT.HUB_product_config h ON l.CONFIG_HK=h.CONFIG_HK WHERE h.CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK, CONFIG_HK FROM OrderLens.RAW_VAULT.LNK_order_item_config GROUP BY ORDER_ITEM_HK, CONFIG_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK, CONFIG_HK FROM O…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_conf…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 36,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (CONFIG_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config WHERE CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (CONFIG_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK FROM OrderLens.RAW_VAULT.HUB_product_config GROUP BY CONFIG_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK FROM OrderLens.RAW_VA…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_product_config…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 36,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer WHERE ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_HK not in HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer l LEFT JOIN OrderLens.RAW_VAULT.HUB_sales_order h ON l.ORDER_HK=h.ORDER_HK WHERE h.ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (CUSTOMER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer WHERE CUSTOMER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — CUSTOMER_HK not in HUB_customer</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer l LEFT JOIN OrderLens.RAW_VAULT.HUB_customer h ON l.CUSTOMER_HK=h.CUSTOMER_HK WHERE h.CUSTOMER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_HK, CUSTOMER_HK FROM OrderLens.RAW_VAULT.LNK_order_customer GROUP BY ORDER_HK, CUSTOMER_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_HK, CUSTOMER_HK FROM Orde…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 10,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_item WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK FROM OrderLens.RAW_VAULT.HUB_sales_order_item GROUP BY ORDER_ITEM_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK FROM OrderLens.RA…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_item WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_item">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hash key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hash keys break all joins to satellites and links — entity disappears from dashboard.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order WHERE ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order WHE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate hash key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Hash key collisions cause incorrect joins and can swap data between records.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_HK FROM OrderLens.RAW_VAULT.HUB_sales_order GROUP BY ORDER_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_HK FROM OrderLens.RAW_VAU…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order WHE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 10,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE RECOR…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (PARENT_MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE PARENT_MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE PAREN…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (CHILD_MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE CHILD_MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom WHERE CHILD…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT PARENT_MATERIAL_HK, CHILD_MATERIAL_HK FROM OrderLens.RAW_VAULT.LNK_bom GROUP BY PARENT_MATERIAL_HK, CHILD_MATERIAL_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT PARENT_MATERIAL_HK, CHILD_MATER…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_bom…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 15,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (CONFIG_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature WHERE CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — CONFIG_HK not in HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature l LEFT JOIN OrderLens.RAW_VAULT.HUB_product_config h ON l.CONFIG_HK=h.CONFIG_HK WHERE h.CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (FEATURE_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature WHERE FEATURE_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — FEATURE_HK not in HUB_feature</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature l LEFT JOIN OrderLens.RAW_VAULT.HUB_feature h ON l.FEATURE_HK=h.FEATURE_HK WHERE h.FEATURE_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK, FEATURE_HK FROM OrderLens.RAW_VAULT.LNK_config_feature GROUP BY CONFIG_HK, FEATURE_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK, FEATURE_HK FROM Orde…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_bom_component</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (PARENT_MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component WHERE PARENT_MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component W…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_bom_component</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — PARENT_MATERIAL_HK not in LNK_bom</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component s LEFT JOIN OrderLens.RAW_VAULT.LNK_bom p ON s.PARENT_MATERIAL_HK=p.PARENT_MATERIAL_HK WHERE p.PARENT_MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component s…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_bom_component</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component W…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_bom_component</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT PARENT_MATERIAL_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_bom_component GROUP BY PARENT_MATERIAL_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT PARENT_MATERIAL_HK,HASHDIFF FRO…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_bom_component</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_bom_component…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 15,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (FEATURE_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature WHERE FEATURE_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature WHERE F…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — FEATURE_HK not in HUB_feature</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature s LEFT JOIN OrderLens.RAW_VAULT.HUB_feature p ON s.FEATURE_HK=p.FEATURE_HK WHERE p.FEATURE_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature s LEFT …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature WHERE H…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT FEATURE_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_feature GROUP BY FEATURE_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT FEATURE_HK,HASHDIFF FROM OrderL…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_feature…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (CONFIG_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config WHERE CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — CONFIG_HK not in LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item_config p ON s.CONFIG_HK=p.CONFIG_HK WHERE p.CONFIG_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config …</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (14,400)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_product_config GROUP BY CONFIG_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT CONFIG_HK,HASHDIFF FROM OrderLe…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_config…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 36,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_order_status</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status WHERE ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status WH…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_order_status</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_HK not in LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item p ON s.ORDER_HK=p.ORDER_HK WHERE p.ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status s …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_order_status</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status WH…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_order_status</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_order_status GROUP BY ORDER_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_HK,HASHDIFF FROM OrderLen…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_order_status</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_order_status…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 10,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material WHERE MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — MATERIAL_HK not in HUB_material</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material s LEFT JOIN OrderLens.RAW_VAULT.HUB_material p ON s.MATERIAL_HK=p.MATERIAL_HK WHERE p.MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material s LEFT…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_material GROUP BY MATERIAL_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK,HASHDIFF FROM Order…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_material…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_forecast</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecast WHERE MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecas…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_forecast</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — MATERIAL_HK not in HUB_material</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecast s LEFT JOIN OrderLens.RAW_VAULT.HUB_material p ON s.MATERIAL_HK=p.MATERIAL_HK WHERE p.MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecas…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_forecast</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecast WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecas…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_forecast</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_product_forecast GROUP BY MATERIAL_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT MATERIAL_HK,HASHDIFF FROM Order…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_product_forecast</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecast">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_product_forecas…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL record source</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Without a source tag, data lineage is broken.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material WHERE RECORD_SOURCE IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_ITEM_HK not in HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material l LEFT JOIN OrderLens.RAW_VAULT.HUB_sales_order_item h ON l.ORDER_ITEM_HK=h.ORDER_ITEM_HK WHERE h.ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hub key (MATERIAL_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">A NULL foreign key in a link means a dangling relationship.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material WHERE MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — MATERIAL_HK not in HUB_material</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Link records with no matching hub break downstream joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material l LEFT JOIN OrderLens.RAW_VAULT.HUB_material h ON l.MATERIAL_HK=h.MATERIAL_HK WHERE h.MATERIAL_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK combination</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate link entries double-count relationships.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK, MATERIAL_HK FROM OrderLens.RAW_VAULT.LNK_order_item_material GROUP BY ORDER_ITEM_HK, MATERIAL_HK HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK, MATERIAL_HK FROM…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_mate…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (CUSTOMER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer WHERE CUSTOMER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — CUSTOMER_HK not in HUB_customer</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer s LEFT JOIN OrderLens.RAW_VAULT.HUB_customer p ON s.CUSTOMER_HK=p.CUSTOMER_HK WHERE p.CUSTOMER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer s LEFT…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer WHERE …</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT CUSTOMER_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_customer GROUP BY CUSTOMER_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT CUSTOMER_HK,HASHDIFF FROM Order…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_customer…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (ORDER_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order WHERE ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order WHE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_HK not in LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item p ON s.ORDER_HK=p.ORDER_HK WHERE p.ORDER_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order s L…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order WHE…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_sales_order GROUP BY ORDER_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_HK,HASHDIFF FROM OrderLen…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 10,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_item WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_ITEM_HK not in LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_item s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item p ON s.ORDER_ITEM_HK=p.ORDER_ITEM_HK WHERE p.ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_item WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_sales_order_item GROUP BY ORDER_ITEM_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK,HASHDIFF FROM Ord…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_item">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_sales_order_ite…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 12,000</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_schedule_line</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL parent hash key (ORDER_ITEM_HK)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL HK breaks all joins — satellite data becomes completely unreachable.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line WHERE ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line W…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_schedule_line</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Orphan records — ORDER_ITEM_HK not in LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Satellite rows without a parent are invisible in all joins.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line s LEFT JOIN OrderLens.RAW_VAULT.LNK_order_item p ON s.ORDER_ITEM_HK=p.ORDER_ITEM_HK WHERE p.ORDER_ITEM_HK IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line s…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_schedule_line</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">NULL hashdiff (HASHDIFF)</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">NULL hashdiff disables change detection — every reload treated as new version.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line WHERE HASHDIFF IS NULL">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line W…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_schedule_line</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Duplicate HK + hashdiff</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Duplicate hashdiff for same HK indicates a pipeline retry failure.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK,HASHDIFF FROM OrderLens.RAW_VAULT.SAT_schedule_line GROUP BY ORDER_ITEM_HK,HASHDIFF HAVING COUNT(*) > 1) x">SELECT COUNT(*) AS v FROM (SELECT ORDER_ITEM_HK,HASHDIFF FROM Ord…</td>
+          <td style="padding:9px 13px;"><span style="background:#dcfce7;color:#15803d;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✓ PASS</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">SAT_schedule_line</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Total row count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Baseline.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line">SELECT COUNT(*) AS v FROM OrderLens.RAW_VAULT.SAT_schedule_line…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 15,000</span></td>
+        </tr><tr><td colspan="5" style="background:#6b7280;color:white;font-weight:700;font-size:12px;padding:8px 16px;letter-spacing:0.5px;">■ SOURCE</td></tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_customer GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_customer">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_feature GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_feature">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_material GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_material">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_order_item">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item_config GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_config">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_product_config GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_product_config</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_product_config">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_customer GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_customer</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_order_customer">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_sales_order_item GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order_item</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order_item">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.HUB_sales_order GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">HUB_sales_order</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.HUB_sales_order">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_bom GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_bom</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_bom">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_config_feature GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_config_feature</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_config_feature">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr>
+        <tr style="background:#fff5f5;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Single source feeding 100% of records</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">One source feeding everything suggests a backup/fallback took over — may be partial/lower …</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT RECORD_SOURCE, COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS pct FROM OrderLens.RAW_VAULT.LNK_order_item_material GROUP BY RECORD_SOURCE) x">SELECT CASE WHEN MAX(pct)>=99 THEN 1 ELSE 0 END AS v FROM (SELECT…</td>
+          <td style="padding:9px 13px;"><span style="background:#fee2e2;color:#dc2626;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">✗ FAIL (1)</span></td>
+        </tr>
+        <tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+          <td style="padding:9px 13px;font-size:11px;font-weight:600;color:#374151;">LNK_order_item_material</td>
+          <td style="padding:9px 13px;font-size:11px;color:#374151;">Distinct record sources count</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-style:italic;max-width:220px;">Shows all source systems feeding this table — for lineage audit.</td>
+          <td style="padding:9px 13px;font-size:10px;color:#9ca3af;font-family:monospace;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAULT.LNK_order_item_material">SELECT COUNT(DISTINCT RECORD_SOURCE) AS v FROM OrderLens.RAW_VAUL…</td>
+          <td style="padding:9px 13px;"><span style="background:#eff6ff;color:#1d4ed8;border-radius:20px;padding:3px 11px;font-size:11px;font-weight:700;">ℹ 1</span></td>
+        </tr></tbody></table>
+</div>
+
+<div style="text-align:center;color:#9ca3af;font-size:12px;padding:16px 0;">
+  OrderLens · Data Vault Validation · OrderLens · 2026-05-20 14:26:50
+</div>
+</div></body></html>
